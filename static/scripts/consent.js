@@ -1,0 +1,1 @@
+// rnrConsent manager logic

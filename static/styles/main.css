@@ -1,0 +1,158 @@
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  padding-top: 160px; /* was 120px, increase to avoid hiding content */
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+.site-header {
+  background-color: #fff;
+  padding: .3rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+.site-header .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+.site-header .user-controls a {
+  margin-left: 1rem;
+  font-size: 0.95rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.logo-img {
+  height: 55px;
+  object-fit: contain;
+  display: block;
+}
+
+.header-icons a {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Top Navigation Bar */
+/* Top Navigation Bar */
+.top-nav {
+  background-color: #ffecec;
+  padding: 0.5rem 0; /* reduced vertical padding */
+  position: fixed;
+  top: 85px; /* trial and error based on header */
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.top-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.top-nav ul li a {
+  font-weight: 600;
+  color: #333;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.top-nav ul li a:hover {
+  color: #ff6f61;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+
+
+/* Breadcrumb */
+.breadcrumb {
+  background-color: #fafafa;
+  padding: 0.75rem 2rem;
+  font-size: 0.85rem;
+  color: #777;
+  top: 115px; /** Trial and error **/
+  position: absolute;
+  width: 100%;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.site-footer a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-weight: 300;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* spacing between columns */
+  flex-wrap: wrap; /* allow stacking on small screens */
+}
+
+.footer-bottom {
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .category-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

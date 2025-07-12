@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reebu & Raechu – Playful fashion for joyful kids</title>
+  <link rel="icon" href="/assets/favicon/favicon.ico" />
+  <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/home.css" />
+  <script src="/scripts/global.js" defer></script>
+  <script src="scripts/dataLayer.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  
+  <nav class="top-nav">
+  </nav>
+  <main>
+    <section class="hero-section">
+      <img src="/assets/img/home/reebu-raechu-hero.png" alt="Hero Banner" class="hero-banner-img" />
+    </section>
+
+    <section class="age-categories">
+      <h2 class="section-title">Shop by Age</h2>
+      <div class="age-grid">
+        <a href="#" class="age-card"><div class="age-icon"><i class="fas fa-baby"></i></div><span class="age-label">Newborns</span></a>
+        <a href="#" class="age-card"><div class="age-icon"><i class="fas fa-baby-carriage"></i></div><span class="age-label">Infants</span></a>
+        <a href="#" class="age-card"><div class="age-icon"><i class="fas fa-child"></i></div><span class="age-label">Toddlers</span></a>
+        <a href="#" class="age-card"><div class="age-icon"><i class="fas fa-child"></i></div><span class="age-label">Children</span></a>
+        <a href="#" class="age-card"><div class="age-icon"><i class="fas fa-user"></i></div><span class="age-label">Pre-teens</span></a>
+        <a href="#" class="age-card"><div class="age-icon"><i class="fas fa-socks"></i></div><span class="age-label">Accessories</span></a>
+      </div>
+    </section>
+
+    <section class="featured-products">
+      <h2 class="section-title">Featured Products</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="/assets/images/products/kurta-set.jpg" class="product-img" alt="Pastel Cotton Kurta Set">
+          <h3 class="product-name">Pastel Cotton Kurta Set</h3>
+          <p class="product-price">₹1,199</p>
+          <button class="btn btn-sm add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/assets/images/products/floral-frock.jpg" class="product-img" alt="Floral Summer Frock">
+          <h3 class="product-name">Floral Summer Frock</h3>
+          <p class="product-price">₹899</p>
+          <button class="btn btn-sm add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/assets/images/products/organic-bodysuit.jpg" class="product-img" alt="Organic Cotton Bodysuit">
+          <h3 class="product-name">Organic Cotton Bodysuit</h3>
+          <p class="product-price">₹749</p>
+          <button class="btn btn-sm add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+          <img src="/assets/images/products/denim-dungaree.jpg" class="product-img" alt="Denim Dungaree Set">
+          <h3 class="product-name">Denim Dungaree Set</h3>
+          <p class="product-price">₹1,299</p>
+          <button class="btn btn-sm add-to-cart">Add to Cart</button>
+        </div>
+  
+      </div>
+    </section>
+  </main>
+
+
+<script>
+  (function() {
+    function getCookie(name) {
+      const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+      return match ? match[2] : null;
+    }
+
+    const fpid = getCookie("FPID");
+    if (typeof alloy === "function" && fpid) {
+      alloy("sendEvent", {
+        xdm: {
+          custom: {
+            fpid: fpid
+          }
+        }
+      });
+    }
+  })();
+</script>
+
+</body>
+</html>
